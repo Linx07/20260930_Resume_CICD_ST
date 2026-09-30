@@ -30,11 +30,14 @@ function createWorkCard(work) {
   cover.className = 'work-cover'
   const image = document.createElement('img')
   image.src = work.image
-  // alt 要说清楚图上是什么，不能只写"图片"
-  image.alt = `${work.title}的网页截图`
-  // 写死宽高是为了让浏览器提前留好位置，图片加载时页面不会"跳一下"
+  // alt 要说清楚图上是什么，不能只写"图片"。
+  // 封面换成自制示意图之后，这里也从"网页截图"改成了"封面图"——
+  // **alt 写得不准，和没写一样。**
+  image.alt = `${work.title}的封面图`
+  // 写死宽高是为了让浏览器提前留好位置，图片加载时页面不会"跳一下"。
+  // 数值要和封面图本身的比例一致（CSS 里 .work-cover img 用的是 aspect-ratio: 1.65）
   image.width = 1200
-  image.height = 800
+  image.height = 727
   cover.append(image)
 
   const copy = document.createElement('div')

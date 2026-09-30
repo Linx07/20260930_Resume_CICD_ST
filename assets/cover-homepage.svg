@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="727" viewBox="0 0 1200 727">
+  <rect width="1200" height="727" fill="#e5e0d1"/>
+  <circle cx="1075" cy="105" r="148" fill="#ffffff" opacity="0.34"/>
+  <circle cx="130" cy="655" r="104" fill="#ffffff" opacity="0.26"/>
+
+  <rect x="140" y="118" width="920" height="491" rx="10" fill="#fffdf8" stroke="#ddd8cb" stroke-width="2"/>
+  <path d="M140 128a10 10 0 0 1 10-10h900a10 10 0 0 1 10 10v40H140z" fill="#f4f2eb"/>
+  <circle cx="172" cy="143" r="6" fill="#c8baa2"/>
+  <circle cx="196" cy="143" r="6" fill="#d5cbb8"/>
+  <circle cx="220" cy="143" r="6" fill="#e1ddd3"/>
+
+  <text x="600" y="340" text-anchor="middle" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif" font-size="56" font-weight="600" fill="#254a40">个人主页 · 作品集</text>
+  <text x="600" y="398" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="26" fill="#7c6348">Personal Homepage</text>
+  <line x1="500" y1="436" x2="700" y2="436" stroke="#b8a27d" stroke-width="3"/>
+  <text x="600" y="496" text-anchor="middle" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif" font-size="24" fill="#6d746d">HTML5 · CSS Grid · 响应式布局</text>
+</svg>

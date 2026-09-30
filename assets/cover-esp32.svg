@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="727" viewBox="0 0 1200 727">
+  <rect width="1200" height="727" fill="#dfe3e7"/>
+  <circle cx="1075" cy="105" r="148" fill="#ffffff" opacity="0.4"/>
+  <circle cx="130" cy="655" r="104" fill="#ffffff" opacity="0.32"/>
+
+  <rect x="140" y="118" width="920" height="491" rx="10" fill="#fffdf8" stroke="#d2d8dd" stroke-width="2"/>
+  <path d="M140 128a10 10 0 0 1 10-10h900a10 10 0 0 1 10 10v40H140z" fill="#eef1f4"/>
+  <circle cx="172" cy="143" r="6" fill="#bcc4cb"/>
+  <circle cx="196" cy="143" r="6" fill="#cbd2d8"/>
+  <circle cx="220" cy="143" r="6" fill="#dfe3e7"/>
+
+  <text x="600" y="340" text-anchor="middle" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif" font-size="56" font-weight="600" fill="#254a40">ESP32 远程灯控</text>
+  <text x="600" y="398" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="26" fill="#7c6348">MQTT Light Control</text>
+  <line x1="500" y1="436" x2="700" y2="436" stroke="#b8a27d" stroke-width="3"/>
+  <text x="600" y="496" text-anchor="middle" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif" font-size="24" fill="#6d746d">ESP32 · MQTT · Vue</text>
+</svg>

@@ -105,9 +105,10 @@ h1 span { font-size: 32px; font-weight: 400; letter-spacing: 0; color: var(--sub
 .work-card > a:hover { text-decoration: none; transform: translateY(-4px); border-color: #b7a88d; box-shadow: 0 14px 30px #34433810; }
 .work-card > a:focus-visible { outline-offset: 5px; }
 .work-cover { background: #e5e0d1; padding: 24px; overflow: hidden; }
-.work-community .work-cover { background: #dbe5dc; }
-.work-greeting-card .work-cover { background: #ece0d9; }
-.work-music-station .work-cover { background: #dfe3e7; }
+/* 每张卡片的封面底色，按作品类型区分；改作品时这里也要跟着改。 */
+.work-trash .work-cover { background: #dbe5dc; }
+.work-esp32 .work-cover { background: #dfe3e7; }
+.work-flask .work-cover { background: #ece0d9; }
 .work-cover img { display: block; width: 100%; height: auto; aspect-ratio: 1.65; object-fit: cover; object-position: top; border: 1px solid #ffffffb3; border-radius: 3px; box-shadow: 0 8px 20px #2b393614; transition: transform .4s ease; }
 .work-card > a:hover img { transform: scale(1.018); }
 .work-copy { position: relative; padding: 19px 26px 22px; }

@@ -4,9 +4,9 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <meta content="noindex, nofollow" name="robots"/>
-  <meta content="课程练习：个人介绍、技能与作品门户。" name="description"/>
+  <meta content="林鑫的个人主页：学习记录、技能与作品。" name="description"/>
   <title>
-   我的个人主页
+   林鑫 · 个人主页
   </title>
   <link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
   <!-- CSS 负责颜色、字体、布局；defer 让 JavaScript 在 HTML 解析完成后执行。 -->
@@ -25,9 +25,10 @@
   <header class="site-header">
    <div class="container header-inner">
     <a class="brand" href="#about">
-     我的主页
+     林鑫<span>Lin Xin</span>
     </a>
     <!-- href="#栏目ID" 是原生锚点：即使不加载 JavaScript，也能跳到对应栏目。 -->
+    <!-- 导航文字就是栏目名，app.js 会直接读这里的文字显示在右下角徽标上，不用另外维护对照表。 -->
     <nav aria-label="主导航">
      <a href="#about">
       关于
@@ -36,7 +37,7 @@
       经历
      </a>
      <a href="#projects">
-      科研
+      项目
      </a>
      <a href="#skills">
       技能
@@ -45,36 +46,36 @@
       作品
      </a>
      <a href="#teaching">
-      教学
+      计划
      </a>
      <a href="#publications">
-      成果
+      记录
      </a>
     </nav>
    </div>
   </header>
   <main id="main">
-   <!-- HTML 练习：修改姓名、研究方向、照片路径和联系方式。 -->
+   <!-- 关于：姓名、身份、学习方向、基本资料。改这里就是改"我是谁"。 -->
    <section class="hero" id="about">
     <div class="container">
      <div class="hero-top">
       <div class="hero-copy">
        <h1>
-        林同学
+        林鑫
         <span>
-         Lin
+         Lin Xin
         </span>
        </h1>
        <p class="hero-role">
-        软件技术专业学生 · 前端开发学习者
+        计算机专业 · 2025 级 · 前端开发学习者
        </p>
        <p class="hero-school">
-        我的学校 · 我的班级
+        广东科学技术职业学院 · 珠海
        </p>
       </div>
       <div class="hero-visual">
        <figure>
-        <img alt="个人头像占位图，请替换为自己的图片" height="220" src="assets/avatar.svg" width="220"/>
+        <img alt="林鑫的头像占位图，可替换为自己的照片" height="220" src="assets/avatar.svg" width="220"/>
        </figure>
       </div>
      </div>
@@ -83,7 +84,7 @@
        学习方向
       </span>
       <p>
-       HTML5、CSS3、JavaScript，正在学习 Git、数据库与网站部署。
+       HTML5、CSS3、JavaScript，正在学习 Git、自动检查与自动部署（CI/CD），以及 Python 数据处理。
       </p>
      </div>
      <div class="profile-details">
@@ -92,7 +93,7 @@
         学习阶段
        </span>
        <p>
-        在校学习
+        在校学习 · 2025 级
        </p>
       </div>
       <div>
@@ -100,7 +101,7 @@
         所在城市
        </span>
        <p>
-        珠海
+        珠海读书 · 广州居住
        </p>
       </div>
       <div>
@@ -108,15 +109,15 @@
         联系
        </span>
        <p>
-        请填写可公开的联系方式
+        <a href="mailto:1778913273@qq.com">1778913273@qq.com</a>
        </p>
       </div>
       <div>
        <span>
-        学校地址
+        学校
        </span>
        <p>
-        请填写自己的学校地址
+        广东科学技术职业学院
        </p>
       </div>
      </div>
@@ -127,22 +128,35 @@
     <div class="container">
      <header class="section-heading">
       <h2>
-       教育与工作经历
+       教育与实践经历
       </h2>
      </header>
      <div class="section-content">
-      <!-- TASK-HTML：复制 experience-item 可增加一条自己的经历。 -->
+      <!-- TASK-HTML：复制一整个 experience-item 就能增加一条经历，不用改 CSS。 -->
       <div class="experience-item">
        <p class="experience-heading">
         <strong>
-         我的学校 · 软件技术专业
+         广东科学技术职业学院 · 计算机专业
         </strong>
         <time>
-         在读
+         2025 - 至今
         </time>
        </p>
        <p class="experience-detail">
-        学习网页开发，用项目记录成长。
+        学习网页开发基础，按周完成可运行的小项目，并用 Git 记录每一次修改。
+       </p>
+      </div>
+      <div class="experience-item">
+       <p class="experience-heading">
+        <strong>
+         个人项目实践 · 课余自练
+        </strong>
+        <time>
+         2026
+        </time>
+       </p>
+       <p class="experience-detail">
+        完成响应式个人主页、垃圾图像识别分类、ESP32 远程灯控与 Flask 多页应用四个练习项目。
        </p>
       </div>
      </div>
@@ -156,15 +170,49 @@
       </h2>
      </header>
      <div class="section-content">
+      <!-- TASK-HTML：复制一整个 research-item 就能增加一个项目。 -->
       <article class="research-item">
        <h3>
         <time>
-         课程练习
+         2026
         </time>
-        个人主页
+        个人主页与作品集
        </h3>
        <p>
-        项目内容：制作自己的网页，展示资料与作品，记录修改、测试与发布过程。
+        用 HTML5 语义结构搭建页面，CSS Grid 加媒体查询做响应式布局；推送到 GitHub 后由 GitHub Actions 自动检查代码，检查通过才发布上线。
+       </p>
+      </article>
+      <article class="research-item">
+       <h3>
+        <time>
+         2026
+        </time>
+        垃圾图像识别分类
+       </h3>
+       <p>
+        基于 360-image 数据集，在云平台上训练图像分类模型，并用 OpenCV 读取摄像头画面做实时识别。
+       </p>
+      </article>
+      <article class="research-item">
+       <h3>
+        <time>
+         2026
+        </time>
+        ESP32 远程灯控
+       </h3>
+       <p>
+        ESP32 通过 MQTT 接入 EMQX Cloud，网页端下发指令控制开发板上的 LED 开关，理解"设备—云—网页"三者怎么通信。
+       </p>
+      </article>
+      <article class="research-item">
+       <h3>
+        <time>
+         2026
+        </time>
+        Flask 多页应用
+       </h3>
+       <p>
+        用 Flask 路由和表单完成多页面练习，包含页码转换器等小工具，体会后端怎么把数据交给页面。
        </p>
       </article>
      </div>
@@ -183,19 +231,19 @@
         <strong>
          网页内容
         </strong>
-        HTML5 结构、图片、链接。
+        HTML5 语义标签、图片与链接、表单结构。
        </li>
        <li>
         <strong>
          页面样式
         </strong>
-        CSS3 字体、颜色、响应式布局。
+        CSS3 字体与配色、Grid 与 Flex 布局、媒体查询响应式。
        </li>
        <li>
         <strong>
          开发过程
         </strong>
-        JavaScript、Git、检查与部署。
+        JavaScript 基础、Git 版本管理、自检脚本与自动部署。
        </li>
       </ul>
      </div>
@@ -208,7 +256,7 @@
        作品门户
       </h2>
       <p class="works-notice">
-       以下为教学示例，完成后可替换为自己的作品。
+       封面图先用自制示意图，换成自己的截图后替换 assets 里的文件即可。
       </p>
      </header>
      <!-- 第 5 课新增：筛选与排序工具条。里面的按钮由 JavaScript 生成，
@@ -220,63 +268,65 @@
        按年份：新→旧
       </button>
      </div>
+     <!-- 下面这四条是"不写 JavaScript 也要能看"的静态版本，
+          内容必须和 works-data.js 保持一致；页面加载后由 JavaScript 用数据重新渲染一遍。 -->
      <ol class="portfolio-list">
-      <li class="work-card work-blog">
-       <a href="https://ffd-p2-blog.netlify.app/" rel="noopener noreferrer" target="_blank">
+      <li class="work-card work-homepage">
+       <a href="https://linx07.github.io/p1-lesson-03-0120251157/" rel="noopener noreferrer" target="_blank">
         <div class="work-cover">
-         <img alt="长风成卷 · 博客应用的实际网页截图" decoding="async" height="800" src="assets/work-blog.png" width="1200"/>
+         <img alt="个人主页 · 作品集的封面图" decoding="async" height="727" src="assets/cover-homepage.svg" width="1200"/>
         </div>
         <div class="work-copy">
          <h3>
-          长风成卷 · 博客应用
+          个人主页 · 作品集
          </h3>
          <p>
-          文章展示、接口与数据库。
+          HTML5 结构、CSS Grid 响应式布局、自动部署。
          </p>
         </div>
        </a>
       </li>
-      <li class="work-card work-community">
-       <a href="https://ffd-p3-community.netlify.app/" rel="noopener noreferrer" target="_blank">
+      <li class="work-card work-trash">
+       <a href="https://github.com/Linx07" rel="noopener noreferrer" target="_blank">
         <div class="work-cover">
-         <img alt="群像云图 · 社区应用的实际网页截图" decoding="async" height="800" src="assets/work-community.png" width="1200"/>
+         <img alt="垃圾图像识别分类的封面图" decoding="async" height="727" src="assets/cover-trash.svg" width="1200"/>
         </div>
         <div class="work-copy">
          <h3>
-          群像云图 · 社区应用
+          垃圾图像识别分类
          </h3>
          <p>
-          内容发布与社区互动。
+          数据集训练、模型调用与摄像头实时识别。
          </p>
         </div>
        </a>
       </li>
-      <li class="work-card work-greeting-card">
-       <a href="https://ffd-p4-greeting-card.netlify.app/" rel="noopener noreferrer" target="_blank">
+      <li class="work-card work-esp32">
+       <a href="https://github.com/Linx07" rel="noopener noreferrer" target="_blank">
         <div class="work-cover">
-         <img alt="一笺心意 · 祝福卡片的实际网页截图" decoding="async" height="800" src="assets/work-greeting-card.png" width="1200"/>
+         <img alt="ESP32 远程灯控的封面图" decoding="async" height="727" src="assets/cover-esp32.svg" width="1200"/>
         </div>
         <div class="work-copy">
          <h3>
-          一笺心意 · 祝福卡片
+          ESP32 远程灯控
          </h3>
          <p>
-          卡片制作与作品分享。
+          MQTT 上云，网页端下发指令控制设备。
          </p>
         </div>
        </a>
       </li>
-      <li class="work-card work-music-station">
-       <a href="https://ffd-p5-music-station.netlify.app/" rel="noopener noreferrer" target="_blank">
+      <li class="work-card work-flask">
+       <a href="https://github.com/Linx07" rel="noopener noreferrer" target="_blank">
         <div class="work-cover">
-         <img alt="星声音乐站 · 音乐应用的实际网页截图" decoding="async" height="800" src="assets/work-music-station.png" width="1200"/>
+         <img alt="Flask 多页应用的封面图" decoding="async" height="727" src="assets/cover-flask.svg" width="1200"/>
         </div>
         <div class="work-copy">
          <h3>
-          星声音乐站 · 音乐应用
+          Flask 多页应用
          </h3>
          <p>
-          网页音频与交互实践。
+          路由、表单与多页面组织。
          </p>
         </div>
        </a>
@@ -288,7 +338,7 @@
     <div class="container">
      <header class="section-heading">
       <h2>
-       学习与实践
+       学习计划
       </h2>
      </header>
      <div class="section-content">
@@ -301,10 +351,10 @@
          每次课完成一个可运行的小改动。
         </li>
         <li>
-         能解释自己修改的 HTML、CSS 和 JavaScript。
+         能解释自己改过的 HTML、CSS 和 JavaScript。
         </li>
         <li>
-         使用 Git 记录版本，让作品能被别人访问。
+         让作品能被别人通过链接访问，并用 Git 留住每一次修改。
         </li>
        </ol>
       </div>
@@ -325,7 +375,10 @@
        </h3>
        <ol class="references">
         <li>
-         完成第一张个人主页。
+         完成第一张个人主页，并用媒体查询适配手机与电脑。
+        </li>
+        <li>
+         完成 CI/CD 练习：代码推送到 GitHub 后自动检查、自动发布。
         </li>
         <li>
          后续在这里补充自己的真实成果。
@@ -349,6 +402,9 @@
     </a>
     <a href="#portfolio">
      作品门户
+    </a>
+    <a href="mailto:1778913273@qq.com">
+     1778913273@qq.com
     </a>
    </div>
   </footer>

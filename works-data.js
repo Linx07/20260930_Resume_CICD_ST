@@ -11,37 +11,40 @@
 //   url          点击去哪
 //   year         年份，用来排序和显示右上角徽标
 //   tags         标签数组，用来筛选。一个作品可以有多个标签
+//
+// 【维护提示】改完这里，index.html 里那份"不写 JavaScript 也要能看"的静态卡片
+// 最好一起改，两边保持一致。
 const works = [
   {
-    title: '长风成卷 · 博客应用',
-    description: '文章展示、接口与数据库。',
-    image: 'assets/work-blog.png',
-    url: 'https://ffd-p2-blog.netlify.app/',
+    title: '个人主页 · 作品集',
+    description: 'HTML5 结构、CSS Grid 响应式布局、自动部署。',
+    image: 'assets/cover-homepage.svg',
+    url: 'https://linx07.github.io/p1-lesson-03-0120251157/',
     year: 2026,
-    tags: ['前端', '后端', '数据库'],
+    tags: ['前端', '部署'],
   },
   {
-    title: '群像云图 · 社区应用',
-    description: '内容发布与社区互动。',
-    image: 'assets/work-community.png',
-    url: 'https://ffd-p3-community.netlify.app/',
+    title: '垃圾图像识别分类',
+    description: '数据集训练、模型调用与摄像头实时识别。',
+    image: 'assets/cover-trash.svg',
+    url: 'https://github.com/Linx07',
     year: 2026,
-    tags: ['前端', '数据库', '部署'],
+    tags: ['Python', 'AI'],
   },
   {
-    title: '一笺心意 · 祝福卡片',
-    description: '卡片制作与作品分享。',
-    image: 'assets/work-greeting-card.png',
-    url: 'https://ffd-p4-greeting-card.netlify.app/',
-    year: 2025,
-    tags: ['前端', 'AI'],
+    title: 'ESP32 远程灯控',
+    description: 'MQTT 上云，网页端下发指令控制设备。',
+    image: 'assets/cover-esp32.svg',
+    url: 'https://github.com/Linx07',
+    year: 2026,
+    tags: ['物联网', '前端'],
   },
   {
-    title: '星声音乐站 · 音乐应用',
-    description: '网页音频与交互实践。',
-    image: 'assets/work-music-station.png',
-    url: 'https://ffd-p5-music-station.netlify.app/',
-    year: 2025,
-    tags: ['前端', '测试'],
+    title: 'Flask 多页应用',
+    description: '路由、表单与多页面组织。',
+    image: 'assets/cover-flask.svg',
+    url: 'https://github.com/Linx07',
+    year: 2026,
+    tags: ['Python', '后端'],
   },
 ]
